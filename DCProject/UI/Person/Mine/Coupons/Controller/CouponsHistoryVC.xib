@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CouponsHistoryVC">
+            <connections>
+                <outlet property="tableview" destination="Jho-yI-NH4" id="nyQ-Fb-XFh"/>
+                <outlet property="timeBtn" destination="nLR-kH-QUa" id="BxO-6P-pq1"/>
+                <outlet property="userBtn" destination="EdO-1b-ODs" id="PhT-9D-ebX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EdO-1b-ODs">
+                    <rect key="frame" x="0.0" y="44" width="207" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zup-4T-BfR"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="已使用">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected" title="已使用">
+                        <color key="titleColor" red="0.3507429957" green="0.74934130909999996" blue="0.7137266994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="userClick:" destination="-1" eventType="touchUpInside" id="DTk-Rc-DQD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nLR-kH-QUa">
+                    <rect key="frame" x="207" y="44" width="207" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="a2B-Ix-VaH"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="已过期">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected" title="已过期">
+                        <color key="titleColor" red="0.3507429957" green="0.74934130909999996" blue="0.7137266994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="timeClick:" destination="-1" eventType="touchUpInside" id="rXU-Ir-5HQ"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Jho-yI-NH4">
+                    <rect key="frame" x="15" y="84" width="384" height="778"/>
+                    <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jho-yI-NH4" firstAttribute="top" secondItem="EdO-1b-ODs" secondAttribute="bottom" id="06a-oh-aau"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="nLR-kH-QUa" secondAttribute="trailing" id="55Y-da-eno"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Jho-yI-NH4" secondAttribute="bottom" id="QWj-zS-qWA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Jho-yI-NH4" secondAttribute="trailing" constant="15" id="V0o-EM-8nT"/>
+                <constraint firstItem="EdO-1b-ODs" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="WqJ-8G-jHw"/>
+                <constraint firstItem="nLR-kH-QUa" firstAttribute="width" secondItem="EdO-1b-ODs" secondAttribute="width" id="XIl-ik-0zA"/>
+                <constraint firstItem="EdO-1b-ODs" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="d1Q-3p-uEt"/>
+                <constraint firstItem="nLR-kH-QUa" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="hHN-Qr-dgc"/>
+                <constraint firstItem="Jho-yI-NH4" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="lRY-rV-QuS"/>
+                <constraint firstItem="nLR-kH-QUa" firstAttribute="leading" secondItem="EdO-1b-ODs" secondAttribute="trailing" id="mQi-90-v4L"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="109"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

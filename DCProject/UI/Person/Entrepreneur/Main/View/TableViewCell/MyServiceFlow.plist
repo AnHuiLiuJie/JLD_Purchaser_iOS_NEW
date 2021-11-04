@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>gridColor</key>
+		<string>#F36E69</string>
+		<key>gridTag</key>
+		<string></string>
+		<key>gridTitle</key>
+		<string>数据统计</string>
+		<key>iconImage</key>
+		<string>etp_center_sjtj</string>
+	</dict>
+	<dict>
+		<key>gridColor</key>
+		<string>#F36E69</string>
+		<key>gridTag</key>
+		<string></string>
+		<key>gridTitle</key>
+		<string>服务费明细</string>
+		<key>iconImage</key>
+		<string>etp_center_fwfmx</string>
+	</dict>
+	<dict>
+		<key>gridColor</key>
+		<string></string>
+		<key>gridTag</key>
+		<string></string>
+		<key>gridTitle</key>
+		<string>提现记录</string>
+		<key>iconImage</key>
+		<string>etp_center_txjl</string>
+	</dict>
+	<dict>
+		<key>gridColor</key>
+		<string></string>
+		<key>gridTag</key>
+		<string></string>
+		<key>gridTitle</key>
+		<string>我的客源</string>
+		<key>iconImage</key>
+		<string>etp_center_wdky</string>
+	</dict>
+	<dict>
+		<key>gridColor</key>
+		<string></string>
+		<key>gridTag</key>
+		<string></string>
+		<key>gridTitle</key>
+		<string>邀请客源</string>
+		<key>iconImage</key>
+		<string>etp_center_yqky</string>
+	</dict>
+	<dict>
+		<key>gridColor</key>
+		<string></string>
+		<key>gridTag</key>
+		<string></string>
+		<key>gridTitle</key>
+		<string>创客学院</string>
+		<key>iconImage</key>
+		<string>etp_center_ckxy</string>
+	</dict>
+</array>
+</plist>

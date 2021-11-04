@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PhotoCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="143" height="139"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="143" height="139"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U9M-Th-raX">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="139"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuX-kD-eYn">
+                        <rect key="frame" x="123" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="X97-cU-wcN"/>
+                            <constraint firstAttribute="width" constant="20" id="nN1-kV-won"/>
+                        </constraints>
+                        <state key="normal" image="tr_qux"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o9u-Fy-nTK">
+                        <rect key="frame" x="0.0" y="0.0" width="143" height="139"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="o9u-Fy-nTK" secondAttribute="trailing" id="4oV-me-65y"/>
+                <constraint firstItem="o9u-Fy-nTK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="BQx-u8-cyV"/>
+                <constraint firstItem="KuX-kD-eYn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FAU-Mw-NBa"/>
+                <constraint firstAttribute="trailing" secondItem="KuX-kD-eYn" secondAttribute="trailing" id="HJe-ve-cGw"/>
+                <constraint firstItem="o9u-Fy-nTK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LKJ-Iv-RbP"/>
+                <constraint firstItem="U9M-Th-raX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V3D-MZ-bUu"/>
+                <constraint firstAttribute="trailing" secondItem="U9M-Th-raX" secondAttribute="trailing" id="YDL-iR-uE5"/>
+                <constraint firstAttribute="bottom" secondItem="U9M-Th-raX" secondAttribute="bottom" id="lZy-C8-Xue"/>
+                <constraint firstAttribute="bottom" secondItem="o9u-Fy-nTK" secondAttribute="bottom" id="pCV-2o-4sF"/>
+                <constraint firstItem="U9M-Th-raX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yRv-mE-VZ8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="143" height="139"/>
+            <connections>
+                <outlet property="addBtn" destination="o9u-Fy-nTK" id="xAm-Lw-Jf5"/>
+                <outlet property="photoBtn" destination="KuX-kD-eYn" id="Bs0-SW-Dcn"/>
+                <outlet property="photoImageV" destination="U9M-Th-raX" id="fyB-Bh-uF7"/>
+            </connections>
+            <point key="canvasLocation" x="71.5" y="96.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tr_qux" width="43" height="43"/>
+    </resources>
+</document>

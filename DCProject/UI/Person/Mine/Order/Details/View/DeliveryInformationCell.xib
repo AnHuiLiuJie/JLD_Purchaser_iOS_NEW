@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="66" id="KGk-i7-Jjw" customClass="DeliveryInformationCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dc_order_xtsh" translatesAutoresizingMaskIntoConstraints="NO" id="gDc-2c-AgR">
+                        <rect key="frame" x="30" y="0.0" width="3" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="Y8i-Dm-Viw"/>
+                            <constraint firstAttribute="width" constant="3" id="m7u-MX-t0e"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dc_order_tyh" translatesAutoresizingMaskIntoConstraints="NO" id="V6c-La-aGy">
+                        <rect key="frame" x="19" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="V6c-La-aGy" secondAttribute="height" multiplier="1:1" id="ak6-6h-kLd"/>
+                            <constraint firstAttribute="width" constant="25" id="wca-p6-VQ3"/>
+                        </constraints>
+                    </imageView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dc_order_xtsh" translatesAutoresizingMaskIntoConstraints="NO" id="3zK-Vw-MZF">
+                        <rect key="frame" x="30" y="35" width="3" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="3" id="xXs-2v-28p"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdu-HB-1Jh">
+                        <rect key="frame" x="50" y="8" width="260" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SD-6P-tNQ">
+                        <rect key="frame" x="50" y="36" width="260" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Khk-Yv-xQa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="3zK-Vw-MZF" firstAttribute="top" secondItem="V6c-La-aGy" secondAttribute="bottom" id="1MA-Mg-QzY"/>
+                    <constraint firstItem="2SD-6P-tNQ" firstAttribute="trailing" secondItem="Mdu-HB-1Jh" secondAttribute="trailing" id="3QP-wa-BmU"/>
+                    <constraint firstItem="3zK-Vw-MZF" firstAttribute="centerX" secondItem="gDc-2c-AgR" secondAttribute="centerX" id="94z-B6-TdS"/>
+                    <constraint firstItem="Mdu-HB-1Jh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Blx-dc-HMu"/>
+                    <constraint firstItem="V6c-La-aGy" firstAttribute="top" secondItem="gDc-2c-AgR" secondAttribute="bottom" id="UUg-T5-Hva"/>
+                    <constraint firstItem="Mdu-HB-1Jh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="gXb-An-Me7"/>
+                    <constraint firstItem="2SD-6P-tNQ" firstAttribute="leading" secondItem="Mdu-HB-1Jh" secondAttribute="leading" id="kf0-tO-TbT"/>
+                    <constraint firstAttribute="trailing" secondItem="Mdu-HB-1Jh" secondAttribute="trailing" constant="10" id="l4c-hH-78H"/>
+                    <constraint firstItem="V6c-La-aGy" firstAttribute="centerX" secondItem="gDc-2c-AgR" secondAttribute="centerX" id="o3S-HW-f0o"/>
+                    <constraint firstItem="gDc-2c-AgR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pPx-EH-PPL"/>
+                    <constraint firstAttribute="bottom" secondItem="3zK-Vw-MZF" secondAttribute="bottom" id="v9A-nh-Unt"/>
+                    <constraint firstItem="2SD-6P-tNQ" firstAttribute="top" secondItem="Mdu-HB-1Jh" secondAttribute="bottom" constant="10" id="wzY-ux-DJa"/>
+                    <constraint firstItem="gDc-2c-AgR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="zlg-7b-Zo6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bottomLineImg" destination="3zK-Vw-MZF" id="ryK-WO-Yp8"/>
+                <outlet property="contentLab" destination="Mdu-HB-1Jh" id="BJF-qT-qL3"/>
+                <outlet property="statusImg" destination="V6c-La-aGy" id="soW-b8-Dop"/>
+                <outlet property="timeLab" destination="2SD-6P-tNQ" id="Rxw-U7-mEz"/>
+                <outlet property="topLineImg" destination="gDc-2c-AgR" id="t8L-Fb-ded"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dc_order_tyh" width="20" height="20"/>
+        <image name="dc_order_xtsh" width="2.5" height="345"/>
+    </resources>
+</document>

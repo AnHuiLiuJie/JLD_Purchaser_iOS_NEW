@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CouponsListVC">
+            <connections>
+                <outlet property="getbtn" destination="nZH-p2-qOc" id="Xwp-pQ-z5j"/>
+                <outlet property="goodsbtn" destination="RwI-gy-HNB" id="KpA-ri-33P"/>
+                <outlet property="historybtn" destination="oAr-Mm-5gh" id="Jhg-Ft-3DC"/>
+                <outlet property="platformbtn" destination="tOh-gd-OzU" id="IXv-eM-Nll"/>
+                <outlet property="storebtn" destination="7kS-Qd-74r" id="Pga-ih-czB"/>
+                <outlet property="tableView" destination="1tt-dg-fTY" id="bb2-zs-O6u"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kS-Qd-74r">
+                    <rect key="frame" x="0.0" y="44" width="138" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Cqx-7c-2UG"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="店铺券">
+                        <color key="titleColor" red="0.1999999881" green="0.1999999881" blue="0.1999999881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected" title="店铺券">
+                        <color key="titleColor" red="0.3193121552" green="0.70620900389999997" blue="0.670589149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="storeClick:" destination="-1" eventType="touchUpInside" id="Tk4-gJ-HOV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwI-gy-HNB">
+                    <rect key="frame" x="138" y="44" width="138" height="40"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="商品券">
+                        <color key="titleColor" red="0.19999998807907104" green="0.19999998807907104" blue="0.19999998807907104" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected" title="商品券">
+                        <color key="titleColor" red="0.3193121552" green="0.70620900389999997" blue="0.670589149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="goodsClick:" destination="-1" eventType="touchUpInside" id="Jf1-5N-usW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tOh-gd-OzU">
+                    <rect key="frame" x="276" y="44" width="138" height="40"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="平台券">
+                        <color key="titleColor" red="0.1999999881" green="0.1999999881" blue="0.1999999881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <state key="selected" title="平台券">
+                        <color key="titleColor" red="0.3193121552" green="0.70620900389999997" blue="0.670589149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <connections>
+                        <action selector="platformClick:" destination="-1" eventType="touchUpInside" id="DEU-sN-53X"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAr-Mm-5gh">
+                    <rect key="frame" x="27" y="812" width="152.5" height="40"/>
+                    <color key="backgroundColor" red="0.3193121552" green="0.70620900389999997" blue="0.670589149" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="2Ek-V0-iuf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="优惠券历史记录">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="couponsHistoryClick:" destination="-1" eventType="touchUpInside" id="4Wc-MO-uXe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nZH-p2-qOc">
+                    <rect key="frame" x="234.5" y="812" width="152.5" height="40"/>
+                    <color key="backgroundColor" red="0.91018581389999997" green="0.37901377679999998" blue="0.1645945013" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="LqK-XY-aX8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="去领券中心">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="getCouponsClick:" destination="-1" eventType="touchUpInside" id="QCt-b1-jKS"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="1tt-dg-fTY">
+                    <rect key="frame" x="15" y="84" width="384" height="723"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tOh-gd-OzU" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="81w-7Z-FCV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="nZH-p2-qOc" secondAttribute="trailing" constant="27" id="8Kt-PZ-n28"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="1tt-dg-fTY" secondAttribute="bottom" constant="55" id="AlH-Tb-ASw"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="tOh-gd-OzU" secondAttribute="trailing" id="DoN-xy-Qaw"/>
+                <constraint firstItem="1tt-dg-fTY" firstAttribute="top" secondItem="7kS-Qd-74r" secondAttribute="bottom" id="Ezi-5Q-4tr"/>
+                <constraint firstItem="RwI-gy-HNB" firstAttribute="height" secondItem="7kS-Qd-74r" secondAttribute="height" id="G7I-aM-Xp9"/>
+                <constraint firstItem="RwI-gy-HNB" firstAttribute="leading" secondItem="7kS-Qd-74r" secondAttribute="trailing" id="LI2-0k-W0y"/>
+                <constraint firstItem="nZH-p2-qOc" firstAttribute="width" secondItem="oAr-Mm-5gh" secondAttribute="width" id="Mj2-4Z-3MI"/>
+                <constraint firstItem="nZH-p2-qOc" firstAttribute="leading" secondItem="oAr-Mm-5gh" secondAttribute="trailing" constant="55" id="Nwh-q5-795"/>
+                <constraint firstItem="tOh-gd-OzU" firstAttribute="leading" secondItem="RwI-gy-HNB" secondAttribute="trailing" id="VxB-R1-fkb"/>
+                <constraint firstItem="7kS-Qd-74r" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="WEg-xL-nPH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="1tt-dg-fTY" secondAttribute="trailing" constant="15" id="eVF-0K-4PT"/>
+                <constraint firstItem="tOh-gd-OzU" firstAttribute="height" secondItem="7kS-Qd-74r" secondAttribute="height" id="jyv-g0-QR4"/>
+                <constraint firstItem="1tt-dg-fTY" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="15" id="pW4-uU-EVd"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="oAr-Mm-5gh" secondAttribute="bottom" constant="10" id="rjL-RF-Ti9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="nZH-p2-qOc" secondAttribute="bottom" constant="10" id="sBc-LV-s3x"/>
+                <constraint firstItem="RwI-gy-HNB" firstAttribute="width" secondItem="7kS-Qd-74r" secondAttribute="width" id="sCh-4U-ucP"/>
+                <constraint firstItem="oAr-Mm-5gh" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="27" id="u9Z-84-eOu"/>
+                <constraint firstItem="7kS-Qd-74r" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="uAF-h0-L4k"/>
+                <constraint firstItem="tOh-gd-OzU" firstAttribute="width" secondItem="7kS-Qd-74r" secondAttribute="width" id="w5V-Mt-J2r"/>
+                <constraint firstItem="RwI-gy-HNB" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="xde-pX-csj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+</document>

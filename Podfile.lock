@@ -1,0 +1,159 @@
+PODS:
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - AlipaySDK-iOS (15.7.9)
+  - Bugly (2.5.90)
+  - FDFullscreenPopGesture (1.1)
+  - IQKeyboardManager (6.5.6)
+  - JCore (2.7.1)
+  - JPush (3.7.0):
+    - JCore (< 3.0.0, >= 2.0.0)
+  - Masonry (1.1.0)
+  - MJExtension (3.3.0)
+  - MJRefresh (3.6.1)
+  - SDCycleScrollView (1.82):
+    - SDWebImage (>= 5.0.0)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SVProgressHUD (2.2.5)
+  - Toast (4.0.0)
+  - TZImagePickerController (3.6.2)
+  - UMCommon (7.3.1):
+    - UMDevice
+  - UMDevice (2.0.2)
+  - UMShare/Core (6.10.2):
+    - UMCommon
+  - UMShare/Social/QQ (6.10.2):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedQQ
+  - UMShare/Social/ReducedQQ (6.10.2):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/ReducedSina (6.10.2):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/ReducedWeChat (6.10.2):
+    - UMCommon
+    - UMShare/Core
+  - UMShare/Social/WeChat (6.10.2):
+    - UMCommon
+    - UMShare/Core
+    - UMShare/Social/ReducedWeChat
+  - UMShare/UI (6.10.2):
+    - UMCommon
+    - UMShare/Core
+  - WechatOpenSDK (1.8.7.1)
+  - WMPageController (2.5.2)
+  - WXSTransition (1.2.1)
+  - YBAttributeTextTapAction (3.0.3)
+  - YBImageBrowser (3.0.9):
+    - YBImageBrowser/Core (= 3.0.9)
+  - YBImageBrowser/Core (3.0.9):
+    - SDWebImage (>= 5.0.0)
+    - YYImage
+  - YBPopupMenu (1.1.2)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+
+DEPENDENCIES:
+  - AFNetworking
+  - AlipaySDK-iOS
+  - Bugly
+  - FDFullscreenPopGesture
+  - IQKeyboardManager
+  - JPush
+  - Masonry
+  - MJExtension
+  - MJRefresh
+  - SDCycleScrollView
+  - SDWebImage
+  - SVProgressHUD
+  - Toast
+  - TZImagePickerController
+  - UMCommon
+  - UMDevice
+  - UMShare/Social/QQ
+  - UMShare/Social/ReducedSina
+  - UMShare/Social/WeChat
+  - UMShare/UI
+  - WechatOpenSDK
+  - WMPageController
+  - WXSTransition
+  - YBAttributeTextTapAction
+  - YBImageBrowser
+  - YBPopupMenu (= 1.1.2)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - AlipaySDK-iOS
+    - Bugly
+    - FDFullscreenPopGesture
+    - IQKeyboardManager
+    - JCore
+    - JPush
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - SDCycleScrollView
+    - SDWebImage
+    - SVProgressHUD
+    - Toast
+    - TZImagePickerController
+    - UMCommon
+    - UMDevice
+    - UMShare
+    - WechatOpenSDK
+    - WMPageController
+    - WXSTransition
+    - YBAttributeTextTapAction
+    - YBImageBrowser
+    - YBPopupMenu
+    - YYImage
+
+SPEC CHECKSUMS:
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  AlipaySDK-iOS: 94ff4c0e17c5e7d126b8207596d5033006534c25
+  Bugly: 88bc32c0acc6fef7b74d610f0319ee7560d6b9fe
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  IQKeyboardManager: 2a6e97afdafc7becf0cb17a9a8d795e3a980717f
+  JCore: 9d5bda3a172c65bbe14f2806ab0f6246f8a06065
+  JPush: 1fd7a326e7e6588eba517659ce1b79a144e54938
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 01704cca2b60a214c10761b6491eab74069d68a9
+  MJRefresh: d2c1970d1cf6e77fcfcdfe76c943dfab8dbfa5c1
+  SDCycleScrollView: a0d74c3384caa72bdfc81470bdbc8c14b3e1fbcf
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  TZImagePickerController: e1775fedb4058b78000fb00d9f6eeaedb445a1ed
+  UMCommon: fc4623ac3445576fad683452ddc832b3b426f4c6
+  UMDevice: c883577d50c382a33be6ca3dde25c7ed89298b6c
+  UMShare: ec11ef18fe90e7430466aced74fc305fe5e51618
+  WechatOpenSDK: 6a4d1436c15b3b5fe2a0bd383f3046010186da44
+  WMPageController: 0c7624d2b48e4f1ab92371688cf6744ed701575d
+  WXSTransition: 0bd758aaa1f5869a908b1bb103c4a9e26ad1d3eb
+  YBAttributeTextTapAction: b7e61f0265b5673e7ce7bad7319e8eff9e209a2b
+  YBImageBrowser: 7ecc8bf33ffa5f3b94c397c29b4f3638dd37f527
+  YBPopupMenu: 6efb286385d95ba5f97c58b8464ec873645e8764
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: d521f374658e432c895e2f2604e4e3de2fb64ca4
+
+COCOAPODS: 1.10.2

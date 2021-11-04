@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="TRRequestPriceCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="60.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofK-qe-jzW">
+                        <rect key="frame" x="10" y="18.5" width="98" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="45m-gW-0Ct"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" red="0.1999999881" green="0.1999999881" blue="0.1999999881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hff-2r-8LY">
+                        <rect key="frame" x="113" y="0.0" width="106" height="60.5"/>
+                        <color key="backgroundColor" red="0.3507429957" green="0.74934130909999996" blue="0.7137266994" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="106" id="XQj-uR-WEM"/>
+                        </constraints>
+                        <state key="normal" title="电话咨询">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLg-Jh-T9B">
+                        <rect key="frame" x="219" y="0.0" width="106" height="60.5"/>
+                        <color key="backgroundColor" red="0.92192721369999997" green="0.34739035369999999" blue="0.1842238903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="106" id="quD-bg-dWC"/>
+                        </constraints>
+                        <state key="normal" title="提交">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="hff-2r-8LY" secondAttribute="bottom" id="2sm-Gu-F89"/>
+                    <constraint firstAttribute="bottom" secondItem="GLg-Jh-T9B" secondAttribute="bottom" id="8MQ-rH-X9L"/>
+                    <constraint firstItem="ofK-qe-jzW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="NMH-t9-qhv"/>
+                    <constraint firstItem="GLg-Jh-T9B" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WcJ-N5-Hgo"/>
+                    <constraint firstAttribute="trailing" secondItem="GLg-Jh-T9B" secondAttribute="trailing" id="auj-HM-9Jb"/>
+                    <constraint firstItem="ofK-qe-jzW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jIO-5w-St7"/>
+                    <constraint firstItem="hff-2r-8LY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jyJ-YQ-LAs"/>
+                    <constraint firstItem="hff-2r-8LY" firstAttribute="leading" secondItem="ofK-qe-jzW" secondAttribute="trailing" constant="5" id="mR6-wS-l99"/>
+                    <constraint firstItem="GLg-Jh-T9B" firstAttribute="leading" secondItem="hff-2r-8LY" secondAttribute="trailing" id="tkZ-dd-qx4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="callbtn" destination="hff-2r-8LY" id="jPP-MR-Ml9"/>
+                <outlet property="commitBtn" destination="GLg-Jh-T9B" id="A6c-qO-PZe"/>
+                <outlet property="priceLab" destination="ofK-qe-jzW" id="d9q-uO-2Hn"/>
+            </connections>
+            <point key="canvasLocation" x="141.30434782608697" y="128.23660714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

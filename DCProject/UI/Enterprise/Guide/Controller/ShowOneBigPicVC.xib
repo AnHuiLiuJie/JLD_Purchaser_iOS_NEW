@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowOneBigPicVC">
+            <connections>
+                <outlet property="ImageHeight" destination="JH2-VD-HXh" id="I3x-e7-ydh"/>
+                <outlet property="bigImageV" destination="RiF-PM-bxI" id="fnQ-og-LD9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNP-D1-gXe">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <connections>
+                        <action selector="disClick:" destination="-1" eventType="touchUpInside" id="k5v-bL-ixP"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RiF-PM-bxI">
+                    <rect key="frame" x="0.0" y="198" width="414" height="500"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="500" id="JH2-VD-HXh"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dNP-D1-gXe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9eT-2v-37E"/>
+                <constraint firstItem="RiF-PM-bxI" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="FG4-Yy-JjU"/>
+                <constraint firstItem="RiF-PM-bxI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P7O-jz-HnE"/>
+                <constraint firstItem="dNP-D1-gXe" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="PvH-kT-TsH"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="dNP-D1-gXe" secondAttribute="trailing" id="VrP-Kh-SHR"/>
+                <constraint firstItem="RiF-PM-bxI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XD9-tS-Pbn"/>
+                <constraint firstAttribute="trailing" secondItem="RiF-PM-bxI" secondAttribute="trailing" id="i6T-m1-9IV"/>
+                <constraint firstAttribute="bottom" secondItem="dNP-D1-gXe" secondAttribute="bottom" id="q3g-zk-fHC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </view>
+    </objects>
+</document>

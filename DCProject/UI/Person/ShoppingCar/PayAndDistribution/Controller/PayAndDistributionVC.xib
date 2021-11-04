@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayAndDistributionVC">
+            <connections>
+                <outlet property="collectionView" destination="kPj-U8-Z8U" id="rGn-Qs-mIH"/>
+                <outlet property="countLab" destination="xhN-q6-mdL" id="YUt-dj-gPo"/>
+                <outlet property="distributionBtn1" destination="tSi-2e-fm8" id="Hdf-t7-B3B"/>
+                <outlet property="distributionBtn2" destination="0Wt-Af-fKx" id="iUp-ty-uCN"/>
+                <outlet property="payBtn1" destination="u6R-lK-gOZ" id="7nF-BP-GR0"/>
+                <outlet property="payBtn2" destination="4WO-t6-Ctq" id="5KZ-Zd-yPd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4sn-GX-wuc">
+                    <rect key="frame" x="0.0" y="54" width="414" height="197"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C95-pr-Cm6">
+                            <rect key="frame" x="17" y="19" width="380" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="bGw-yf-c0r"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.66274511814117432" green="0.66274517774581909" blue="0.66274511814117432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQW-6V-1tY">
+                            <rect key="frame" x="15" y="53" width="384" height="70"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhN-q6-mdL">
+                                    <rect key="frame" x="330.5" y="25" width="35.5" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" priority="750" constant="30" id="IL0-Bn-gNx"/>
+                                        <constraint firstAttribute="height" constant="20" id="Px5-9c-jJg"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.66274511814117432" green="0.66274517774581909" blue="0.66274511814117432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kPj-U8-Z8U">
+                                    <rect key="frame" x="10" y="0.0" width="315.5" height="70"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4D5-8F-x2y">
+                                        <size key="itemSize" width="50" height="50"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96470588445663452" green="0.96470600366592407" blue="0.96470588445663452" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="xhN-q6-mdL" firstAttribute="centerY" secondItem="AQW-6V-1tY" secondAttribute="centerY" id="0cy-ye-IXw"/>
+                                <constraint firstItem="xhN-q6-mdL" firstAttribute="leading" secondItem="kPj-U8-Z8U" secondAttribute="trailing" constant="5" id="1sP-Qp-B0U"/>
+                                <constraint firstAttribute="trailing" secondItem="xhN-q6-mdL" secondAttribute="trailing" constant="18" id="UKM-Zm-YLr"/>
+                                <constraint firstAttribute="height" constant="70" id="YzW-B9-ku9"/>
+                                <constraint firstAttribute="bottom" secondItem="kPj-U8-Z8U" secondAttribute="bottom" id="a4I-9m-E7x"/>
+                                <constraint firstItem="kPj-U8-Z8U" firstAttribute="top" secondItem="AQW-6V-1tY" secondAttribute="top" id="gae-di-7IZ"/>
+                                <constraint firstItem="kPj-U8-Z8U" firstAttribute="leading" secondItem="AQW-6V-1tY" secondAttribute="leading" constant="10" id="mbJ-ON-QUS"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u6R-lK-gOZ">
+                            <rect key="frame" x="43" y="142" width="111" height="37"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="111" id="8hq-tK-fQv"/>
+                                <constraint firstAttribute="height" constant="37" id="qhP-tJ-ELh"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="货到付款">
+                                <color key="titleColor" red="0.043137259781360626" green="0.043137267231941223" blue="0.043137259781360626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" title="货到付款">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="payClick1:" destination="-1" eventType="touchUpInside" id="pwD-h2-hzH"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4WO-t6-Ctq">
+                            <rect key="frame" x="269" y="142" width="111" height="37"/>
+                            <color key="backgroundColor" red="0.33515834808349609" green="0.73365598917007446" blue="0.69804030656814575" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="111" id="Rux-IM-AOh"/>
+                                <constraint firstAttribute="height" constant="37" id="v7g-Za-jti"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="在线支付">
+                                <color key="titleColor" red="0.043137259781360626" green="0.043137267231941223" blue="0.043137259781360626" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" title="在线支付">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="payClick2:" destination="-1" eventType="touchUpInside" id="NVH-Mi-Etk"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="C95-pr-Cm6" firstAttribute="leading" secondItem="4sn-GX-wuc" secondAttribute="leading" constant="17" id="2mp-8H-Zv9"/>
+                        <constraint firstAttribute="bottom" secondItem="u6R-lK-gOZ" secondAttribute="bottom" constant="18" id="8UC-o8-1MY"/>
+                        <constraint firstAttribute="trailing" secondItem="AQW-6V-1tY" secondAttribute="trailing" constant="15" id="BRP-Gc-l5Z"/>
+                        <constraint firstItem="AQW-6V-1tY" firstAttribute="leading" secondItem="4sn-GX-wuc" secondAttribute="leading" constant="15" id="FcD-nr-c1Q"/>
+                        <constraint firstAttribute="trailing" secondItem="C95-pr-Cm6" secondAttribute="trailing" constant="17" id="Hnm-T5-ovh"/>
+                        <constraint firstAttribute="bottom" secondItem="4WO-t6-Ctq" secondAttribute="bottom" constant="18" id="LQF-vq-23I"/>
+                        <constraint firstAttribute="height" constant="197" id="WqI-nW-00x"/>
+                        <constraint firstItem="C95-pr-Cm6" firstAttribute="top" secondItem="4sn-GX-wuc" secondAttribute="top" constant="19" id="Wx7-IY-8kH"/>
+                        <constraint firstItem="u6R-lK-gOZ" firstAttribute="leading" secondItem="4sn-GX-wuc" secondAttribute="leading" constant="43" id="bjl-lg-X3B"/>
+                        <constraint firstAttribute="trailing" secondItem="4WO-t6-Ctq" secondAttribute="trailing" constant="34" id="cKT-ST-pjN"/>
+                        <constraint firstItem="AQW-6V-1tY" firstAttribute="top" secondItem="C95-pr-Cm6" secondAttribute="bottom" constant="14" id="xeV-3e-jbu"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kwT-bK-Crt">
+                    <rect key="frame" x="0.0" y="263" width="414" height="143"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="配送方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pjs-v7-DBa">
+                            <rect key="frame" x="17" y="19" width="380" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="LjO-ct-Ia7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.66274511814117432" green="0.66274517774581909" blue="0.66274511814117432" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSi-2e-fm8">
+                            <rect key="frame" x="43" y="88" width="111" height="37"/>
+                            <color key="backgroundColor" red="0.3351583481" green="0.73365598919999997" blue="0.69804030660000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="111" id="cjo-wp-l36"/>
+                                <constraint firstAttribute="height" constant="37" id="k2H-5Z-m2s"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="快递配送">
+                                <color key="titleColor" red="0.043137259779999999" green="0.043137267229999998" blue="0.043137259779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" title="货到付款">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="distributionClick:" destination="-1" eventType="touchUpInside" id="VhC-fX-g0m"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wt-Af-fKx">
+                            <rect key="frame" x="269" y="88" width="111" height="37"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="111" id="cgN-LB-mDD"/>
+                                <constraint firstAttribute="height" constant="37" id="eb4-Pt-IcA"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="到店取货">
+                                <color key="titleColor" red="0.043137259779999999" green="0.043137267229999998" blue="0.043137259779999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </state>
+                            <state key="selected" title="在线支付">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="distributionClick2:" destination="-1" eventType="touchUpInside" id="uzT-cg-abv"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0Wt-Af-fKx" secondAttribute="trailing" constant="34" id="0x5-8H-yx2"/>
+                        <constraint firstAttribute="bottom" secondItem="tSi-2e-fm8" secondAttribute="bottom" constant="18" id="2gm-2A-Yet"/>
+                        <constraint firstItem="tSi-2e-fm8" firstAttribute="leading" secondItem="kwT-bK-Crt" secondAttribute="leading" constant="43" id="9lP-On-VPk"/>
+                        <constraint firstItem="Pjs-v7-DBa" firstAttribute="leading" secondItem="kwT-bK-Crt" secondAttribute="leading" constant="17" id="KNp-SD-dsv"/>
+                        <constraint firstItem="Pjs-v7-DBa" firstAttribute="top" secondItem="kwT-bK-Crt" secondAttribute="top" constant="19" id="RWC-X1-ung"/>
+                        <constraint firstAttribute="height" constant="143" id="Z0v-Bg-TUr"/>
+                        <constraint firstAttribute="trailing" secondItem="Pjs-v7-DBa" secondAttribute="trailing" constant="17" id="aXb-d9-4tW"/>
+                        <constraint firstAttribute="bottom" secondItem="0Wt-Af-fKx" secondAttribute="bottom" constant="18" id="pID-yk-2OA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4sn-GX-wuc" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="9Z9-e4-CoJ"/>
+                <constraint firstItem="kwT-bK-Crt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="NAg-sF-jvW"/>
+                <constraint firstItem="4sn-GX-wuc" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="fWj-Df-PCs"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="4sn-GX-wuc" secondAttribute="trailing" id="ghQ-l2-6gI"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="kwT-bK-Crt" secondAttribute="trailing" id="lCR-Vg-RmD"/>
+                <constraint firstItem="kwT-bK-Crt" firstAttribute="top" secondItem="4sn-GX-wuc" secondAttribute="bottom" constant="12" id="zaH-cl-Oaf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </view>
+    </objects>
+</document>

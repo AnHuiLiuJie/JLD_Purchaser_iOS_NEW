@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-DCProject/Pods-DCProject-resources.sh
+${PODS_ROOT}/AlipaySDK-iOS/AlipaySDK.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController 2.bundle
+${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle
+${PODS_ROOT}/UMShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle
+${PODS_ROOT}/YBImageBrowser/YBImageBrowser/YBImageBrowser.bundle

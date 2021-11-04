@@ -1,0 +1,134 @@
+//
+//  PrefixHeader.pch
+//  DCProject
+//
+//  Created by bigbing on 2019/3/31.
+//  Copyright © 2019 bigbing. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that Jinlida@2019188302 should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#endif /* PrefixHeader_pch */
+
+
+#ifdef __OBJC__
+
+
+
+#pragma mark - 工具类 ----
+#import "DCConst.h"
+#import "DCObjectManager.h"
+#import "DCPayTool.h"
+#import "DCRefreshTool.h"
+#import "DCAlterTool.h"
+#import "DCCheckRegular.h"
+#import "DCUpdateTool.h"
+#import "DCUMShareTool.h"
+#import "DCCacheTool.h"
+//#import "DCQiniuTool.h"
+#import "DCHelpTool.h"
+#import "DCAPIManager.h"
+#import "DCPermitTool.h"
+#import "DCPlaceholderTool.h"
+#import "DCSignTool.h"
+#import "DCSpeedy.h" //便捷方法
+
+
+#pragma mark - category ---
+#import "UIColor+Category.h"
+#import "NSString+Category.h"
+#import "UIBarButtonItem+Category.h"
+#import "UIView+Category.h"
+#import "UIButton+Category.h"
+#import "UIImage+Category.h"
+#import "NSDate+Category.h"
+#import "NSObject+Category.h"
+#import "CALayer+Category.h"
+#import "NSArray+Category.h"
+#import "UIWindow+Category.h"
+#import "DCAPIManager+Person.h"
+#import "DCAPIManager+PersonRequest.h"
+#import "DCAPIManager+GLPAPIChange.h"
+#import "UIViewController+DH.h"
+#import "UIView+DCRolling.h"
+#import "UILabel+Category.h"
+//群居解决字典 数组越界 nil
+#import "NSDictionary+Safe.h"
+#import "NSArray+Safe.h"
+
+#pragma mark - SDK ---
+#define MAS_SHORTHAND  // 只要添加了这个宏，就不用带mas_前缀
+#define MAS_SHORTHAND_GLOBALS // 只要添加了这个宏，equalTo就等价于mas_equalTo
+/*Add_HX_标识
+ *引入文件
+ */
+
+#import "DCChatGoodsModel.h"
+#import "AFNetworking.h"
+#import <UMCommon/MobClick.h>
+
+//#import <HelpDesk/HelpDesk.h>
+#import <HelpDeskLite/HelpDeskLite.h>
+//#import <Hyphenate/Hyphenate.h>
+#import "HelpDeskUI.h"
+//#import "CSDemoAccountManager.h"
+#import "Masonry.h"
+#import "Define.h"//要在#import <Masonry.h>#import "UIViewExt.h"后面 因为这里面含有c++代码的宏
+#import "UIView+FLExtension.h"
+
+//Toast
+#import <Toast/Toast.h>
+#import "MJExtension.h"
+#import "MJRefresh.h"
+#import "SVProgressHUD.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "IQKeyboardManager.h"
+//#import <QiniuSDK.h>
+#import "JPUSHService.h"
+
+
+#pragma mark - customer ---
+#import "DCLoginTool.h"
+#import "DCH5ViewController.h"
+#import "GLPH5ViewController.h"
+#import "DCAlterView.h"
+
+#pragma mark - 企业 商品详情类型
+typedef NS_ENUM(NSInteger,GLBGoodsDetailType) {
+    GLBGoodsDetailTypeNormal = 0,  // 正常商品
+    GLBGoodsDetailTypePromotione,  // 促销商品
+    GLBGoodsDetailTypeYjc,         // 药集采商品
+};
+
+#pragma mark - 个人 商品详情类型//活动类型：freePostage-包邮活动；coupon-单品优惠券；fullMinus-满减；seckill-秒杀；collage-拼团；group-团购,可用值:freePostage,coupon,fullMinus,seckill,collage,group
+//业务互斥规则：秒杀、拼团、团购、优惠券、满减 一个商品同一时间段只会存在一个
+typedef NS_ENUM(NSInteger , GLPGoodsDetailType) {
+    GLPGoodsDetailTypeNormal = 0, // 正常商品
+    GLPGoodsDetailTypeGroup, // group-团购
+    GLPGoodsDetailTypeSeckill, // 限时商品 seckill-秒杀
+    GLPGoodsDetailTypeCollage, // collage-拼团
+    GLPGoodsDetailTypeFreePostage, // freePostage-包邮活动 和其他活动没任何关系
+    GLPGoodsDetailTypeCoupon, // coupon-单品优惠券
+    GLPGoodsDetailTypFullMinus, // fullMinus-满减
+    //GLPGoodsDetailTypeRecipe, // 处方商品
+};
+
+#pragma mark - 用户类型
+typedef NS_ENUM(NSInteger,DCUserType) {
+    DCUserTypeWithCompany = 0,    // 企业用户
+    DCUserTypeWithPerson,  // 个人用户
+};
+
+#pragma mark - 开处方
+typedef NS_OPTIONS(NSUInteger, PrescriptionType) {
+    PrescriptionTypeOnline    = 1,//复诊 相当于线上
+    PrescriptionTypeOffline   = 2,//线下 必须提交处方单
+};
+
+#endif
